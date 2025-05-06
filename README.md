@@ -1,63 +1,12 @@
-  <h1>🛒 Shopping Cart</h1>
-  <p>
-    A dynamic shopping cart built with <strong>React</strong>, where users can browse products, add or remove items, and view a real-time updated cart total. This project is part of 
-    <a href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer">The Odin Project</a> curriculum and focuses on core React concepts such as component-based architecture, state management, and user interaction.
-  </p>
+# React + Vite
 
-  <h2>🚀 Features</h2>
-  <ul>
-    <li>View a list of products</li>
-    <li>Add products to cart</li>
-    <li>Remove items from cart</li>
-    <li>View cart item count and total price</li>
-    <li>Responsive and user-friendly UI</li>
-  </ul>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-  <h2>🛠️ Built With</h2>
-  <ul>
-    <li>React (with functional components and hooks)</li>
-    <li>JavaScript (ES6+)</li>
-    <li>CSS Modules / Tailwind CSS <em>(optional)</em></li>
-    <li>Webpack (for bundling, if not using CRA)</li>
-  </ul>
+Currently, two official plugins are available:
 
-  <h2>📁 Project Structure</h2>
-  <pre>
-/src
-  /components
-    - ProductList.jsx
-    - Cart.jsx
-    - Navbar.jsx
-  /data
-    - products.js
-  - App.jsx
-  - index.js
-  </pre>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-  <h2>📦 Getting Started</h2>
-  <h3>Prerequisites</h3>
-  <ul>
-    <li>Node.js and npm installed</li>
-  </ul>
+## Expanding the ESLint configuration
 
-  <h3>Installation</h3>
-  <pre><code>
-git clone https://github.com/banskotanup/shopping-cart
-cd shopping-cart
-npm install
-npm start
-  </code></pre>
-
-  <h2>🎯 Learning Objectives</h2>
-  <ul>
-    <li>Practice using React <code>useState</code> and <code>useEffect</code></li>
-    <li>Learn to pass props between components</li>
-    <li>Implement conditional rendering</li>
-    <li>Build a modular, reusable UI</li>
-  </ul>
-
-  <h2>📄 License</h2>
-  <p>
-    This project is open source and free to use under the 
-    <a href="LICENSE" target="_blank">MIT License</a>.
-  </p>
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
