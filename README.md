@@ -1,26 +1,36 @@
-<h1>🛒 Shopping Cart</h1>
-A dynamic shopping cart built with React, where users can browse products, add or remove items, and view a real-time updated cart total. This project is part of The Odin Project curriculum and focuses on core React concepts such as component-based architecture, state management, and user interaction.
-<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Cart - The Odin Project</title>
+</head>
+<body>
+  <h1>🛒 Shopping Cart</h1>
+  <p>
+    A dynamic shopping cart built with <strong>React</strong>, where users can browse products, add or remove items, and view a real-time updated cart total. This project is part of 
+    <a href="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer">The Odin Project</a> curriculum and focuses on core React concepts such as component-based architecture, state management, and user interaction.
+  </p>
 
-🚀 Features
-<ul>
-  <li>View a list of products</li>
-  <li>Add products to cart</li>
-  <li>Remove items from cart</li>
-  <li>View cart item count and total price</li>
-  <li>Responsive and user-friendly UI</li>
-</ul>
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>View a list of products</li>
+    <li>Add products to cart</li>
+    <li>Remove items from cart</li>
+    <li>View cart item count and total price</li>
+    <li>Responsive and user-friendly UI</li>
+  </ul>
 
+  <h2>🛠️ Built With</h2>
+  <ul>
+    <li>React (with functional components and hooks)</li>
+    <li>JavaScript (ES6+)</li>
+    <li>CSS Modules / Tailwind CSS <em>(optional)</em></li>
+    <li>Webpack (for bundling, if not using CRA)</li>
+  </ul>
 
-🛠️ Built With
-<ul>
-  <li>React (with functional components and hooks)</li>
-  <li>JavaScript (ES6+)</li>
-  <li>CSS Modules / Tailwind CSS <em>(optional)</em></li>
-  <li>Webpack</li>
-</ul>
-
-📁 Project Structure
+  <h2>📁 Project Structure</h2>
+  <pre>
 /src
   /components
     - ProductList.jsx
@@ -30,31 +40,34 @@ A dynamic shopping cart built with React, where users can browse products, add o
     - products.js
   - App.jsx
   - index.js
-    
-📦 Getting Started
-Prerequisites
-<ul>
-  <li>Node.js and npm installed</li>
-</ul>
+  </pre>
 
-Installation
-<br>
+  <h2>📦 Getting Started</h2>
+  <h3>Prerequisites</h3>
+  <ul>
+    <li>Node.js and npm installed</li>
+  </ul>
+
+  <h3>Installation</h3>
+  <pre><code>
 git clone https://github.com/banskotanup/shopping-cart
-<br>
 cd shopping-cart
-<br>
 npm install
-<br>
 npm start
-<br>
+  </code></pre>
 
-🎯 Learning Objectives
-<ul>
-  <li>Practice using React <code>useState</code> and <code>useEffect</code></li>
-  <li>Learn to pass props between components</li>
-  <li>Implement conditional rendering</li>
-  <li>Build a modular, reusable UI</li>
-</ul>
+  <h2>🎯 Learning Objectives</h2>
+  <ul>
+    <li>Practice using React <code>useState</code> and <code>useEffect</code></li>
+    <li>Learn to pass props between components</li>
+    <li>Implement conditional rendering</li>
+    <li>Build a modular, reusable UI</li>
+  </ul>
 
-📄 License
-This project is open source and free to use under the MIT License.
+  <h2>📄 License</h2>
+  <p>
+    This project is open source and free to use under the 
+    <a href="LICENSE" target="_blank">MIT License</a>.
+  </p>
+</body>
+</html>
