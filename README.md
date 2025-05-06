@@ -37,10 +37,15 @@ Prerequisites
 </ul>
 
 Installation
-git clone https://github.com/your-username/shopping-cart.git
+<br>
+git clone https://github.com/banskotanup/shopping-cart
+<br>
 cd shopping-cart
+<br>
 npm install
+<br>
 npm start
+<br>
 
 🎯 Learning Objectives
 <ul>
