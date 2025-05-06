@@ -1,4 +1,4 @@
-🛒 Shopping Cart
+<h1>🛒 Shopping Cart</h1>
 A dynamic shopping cart built with React, where users can browse products, add or remove items, and view a real-time updated cart total. This project is part of The Odin Project curriculum and focuses on core React concepts such as component-based architecture, state management, and user interaction.
 
 🚀 Features
