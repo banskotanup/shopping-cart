@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shopping Cart - The Odin Project</title>
-</head>
-<body>
   <h1>🛒 Shopping Cart</h1>
   <p>
     A dynamic shopping cart built with <strong>React</strong>, where users can browse products, add or remove items, and view a real-time updated cart total. This project is part of 
@@ -69,5 +61,3 @@ npm start
     This project is open source and free to use under the 
     <a href="LICENSE" target="_blank">MIT License</a>.
   </p>
-</body>
-</html>
