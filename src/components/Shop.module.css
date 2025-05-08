@@ -1,0 +1,104 @@
+body{
+    --color: #EAF0F7;
+    --secondary-color: #6b7283;
+    --bg-color: #0B121E;
+    --secondary-bg-color: #202B3C;
+}
+
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
+
+.spinner{
+    height: 70px;
+    width: 70px;
+    border: 3px solid var(--secondary-color);
+    border-left: 3px solid darkred;
+    border-top: 3px solid darkgreen;
+    animation: 2s spin linear infinite;
+}
+
+@keyframes spin {
+    from{
+        border: 3px solid var(--secondary-color);
+        border-left: 3px solid darkred;
+        border-top: 3px solid darkgreen;
+    }
+    25%{
+        border: 3px solid var(--secondary-color);
+        border-top: 3px solid darkred;
+        border-right: 3px solid darkgreen;
+    }
+    50%{
+        border: 3px solid var(--secondary-color);
+        border-right: 3px solid darkred;
+        border-bottom: 3px solid darkgreen;
+    }
+    to{
+        border: 3px solid var(--secondary-color);
+        border-bottom: 3px solid darkred;
+        border-left: 3px solid darkgreen;
+    }
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 25vw;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+}
+
+img{
+    height: 250px;
+    width: 370px;
+    margin-top: 20px;
+}
+
+
+.desc h3{
+    text-align: justify;
+    
+}
+
+.desc p{
+    text-align: justify;
+}
+
+.cat{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.category{
+    border: 1px solid var(--color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.category:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.active{
+    background-color: var(--color);
+    color: #0B121E;
+    border: 1px solid var(--bg-color);
+}

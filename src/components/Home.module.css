@@ -1,0 +1,103 @@
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+}
+
+.spinner{
+    height: 70px;
+    width: 70px;
+    border: 3px solid var(--secondary-color);
+    border-left: 3px solid darkred;
+    border-top: 3px solid darkgreen;
+    animation: 2s spin linear infinite;
+}
+
+@keyframes spin {
+    from{
+        border: 3px solid var(--secondary-color);
+        border-left: 3px solid darkred;
+        border-top: 3px solid darkgreen;
+    }
+    25%{
+        border: 3px solid var(--secondary-color);
+        border-top: 3px solid darkred;
+        border-right: 3px solid darkgreen;
+    }
+    50%{
+        border: 3px solid var(--secondary-color);
+        border-right: 3px solid darkred;
+        border-bottom: 3px solid darkgreen;
+    }
+    to{
+        border: 3px solid var(--secondary-color);
+        border-bottom: 3px solid darkred;
+        border-left: 3px solid darkgreen;
+    }
+}
+
+.welcomeText{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.welcomeText div h1{
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 4em;
+    height: 40px;
+}
+
+.welcomeText div p{
+    font-family: "Atomic Age", system-ui;
+    font-size: 1.4em;
+}
+
+.welcomeText img{
+    height: auto;
+    width: 100%;
+    opacity: 0.8;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    border-left: 4px solid black;
+}
+
+.welcomeText div .p{
+    font-family: "Josefin Slab", serif;
+    font-size: 1.3em;
+    text-align: center;
+    border: 1px solid #EAF0F7;
+    padding: 20px;
+}
+
+.cat{
+    height: 70px;
+}
+
+.cat h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    height: 33vh;
+    cursor: pointer;
+}
+
+.card p{
+    font-size: 2em;
+    transform: translateY(-20vh);
+    text-align: center;
+    font-family: "Bungee Tint", sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}

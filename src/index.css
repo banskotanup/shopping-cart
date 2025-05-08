@@ -1,0 +1,29 @@
+*{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --color: #EAF0F7;
+    --secondary-color: #6b7283;
+    --bg-color: #0B121E;
+    --secondary-bg-color: #202B3C;
+}
+
+body{
+    color: var(--color);
+    background-color: var(--bg-color);
+    font-family: "Roboto", sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}

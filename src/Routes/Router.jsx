@@ -1,4 +1,5 @@
 import Shop from "../components/Shop";
+import Home from "../components/Home";
 import Cart from "../components/Cart";
 import ErrorPage from "../Error/errorPage";
 import { Navbar } from "../components/Navbar";
@@ -11,7 +12,11 @@ const Router = [
     children: [
       {
         index: true,
-        element: <Shop />,
+        element: <Home />,
+      },
+      {
+        path: "/shop",
+        element: <Shop/>,
       },
       {
         path: "/cart",

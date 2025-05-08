@@ -1,0 +1,60 @@
+body{
+    --color: #EAF0F7;
+    --secondary-color: #6b7283;
+    --bg-color: #0B121E;
+    --secondary-bg-color: #202B3C;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.header h1{
+    font-family: "Dr Sugiyama", cursive;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.headLink{
+    text-decoration: none;
+    color: var(--color);
+}
+
+.nav a{
+    color: var(--color);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.nav a:hover{
+    border-top: 2px solid var(--color);
+    border-bottom: 2px solid var(--color);
+}
+
+.main{
+    flex: 1;
+}
+
+.footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    bottom: 0;
+    background-color: var(--secondary-bg-color);
+}
+
+.active{
+    border: 2px solid var(--color);
+    border-radius: 10px;
+}
