@@ -1,4 +1,4 @@
-export default async function products() {
+export default async function fetchProducts() {
   const productList = [];
 
   try {
