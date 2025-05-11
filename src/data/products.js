@@ -11,7 +11,7 @@ export default async function fetchProducts() {
           title,
           description,
           image,
-          price,
+          price: price.toFixed(2),
           category,
         });
       }

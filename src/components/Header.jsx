@@ -14,7 +14,7 @@ const Header = () => {
         </Link>
       </h1>
       <div className={styles.nav}>
-        <Link to="/">Home</Link>
+        <Link to="/" className={styles.active}>Home</Link>
         <div className={styles.cart}>
           <i className="fas fa-cart-plus fa-xs"></i>
           <sup>{cartItems.length}</sup>

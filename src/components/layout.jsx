@@ -3,6 +3,8 @@ import Header from "./Header";
 import CartTab from "./CartTab";
 import { createContext, useState, useEffect } from "react";
 import fetchProducts from "../data/products";
+import Footer from "./Footer";
+import styles from "./Layout.module.css";
 
 export const ShopContext = createContext({
   products: [],
@@ -27,13 +29,14 @@ const Layout = () => {
 
   return (
     <ShopContext.Provider value={{ cartItems, products, addToCart }}>
-      <div>
-        <main>
+      <div className={styles.body}>
           <Header />
+        <main>
           <hr />
           <Outlet />
         </main>
         <CartTab />
+        <Footer/>
       </div>
     </ShopContext.Provider>
   );

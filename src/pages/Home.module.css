@@ -1,3 +1,10 @@
+body{
+    --color: #EAF0F7;
+    --secondary-color: #6b7283;
+    --bg-color: #0B121E;
+    --secondary-bg-color: #202B3C;
+}
+
 .loading{
     display: flex;
     flex-direction: column;
@@ -75,19 +82,27 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    height: 70vh;
-    width: 25vw;
+    height: 65vh;
+    width: 21vw;
     margin-top: 20px;
-    margin-left: 2%;
+    margin-left: 5%;
     margin-bottom: 30px;
     align-items: center;
     background-color: var(--secondary-bg-color);
+    cursor: pointer;
+    border: 2px solid var(--color);
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px rgba(255, 255, 255, 0.2);
+}
+
+.img{
+    margin-top: 6px;
 }
 
 .card img{
@@ -96,14 +111,38 @@
     margin-top: 20px;
 }
 
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.desc{
+    width: 380px;
+}
 
 .desc h3{
     text-align: justify;
+    height: 23px;
+    overflow: hidden;
     
 }
 
-.desc p{
+.pDesc{
     text-align: justify;
+    height: 55px;
+    overflow: hidden;
+}
+
+.price{
+    text-align: start;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.sPrc{
+    font-weight: 400;
+    margin-left: 1px;
+    color: darkorange;
 }
 
 .cat{
@@ -128,3 +167,22 @@
     color: #0B121E;
     border: 1px solid var(--bg-color);
 }
+
+
+.addToCartBtn{
+    height: 50px;
+    width: 92%;
+    font-size: 1.5em;
+    background-color: var(--secondary-bg-color);
+    border: 2px solid var(--color);
+    color: var(--color);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.addToCartBtn:hover{
+    background-color: var(--color);
+    color: var(--bg-color);
+}
+

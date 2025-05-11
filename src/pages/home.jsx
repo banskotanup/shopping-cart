@@ -76,19 +76,20 @@ const Home = () => {
               {filteredProducts.map((prod) => {
                 return (
                   <div className={styles.card} key={prod.id}>
-                    <div>
+                    <div className={styles.img}>
                       <img src={prod.image} alt="item image" />
                     </div>
                     <div className={styles.desc}>
                       <h3>{prod.title}</h3>
                       <hr />
-                      <p>{prod.description}</p>
-                      <p>{prod.price}</p>
+                      <p className={styles.price}>NPR <span className={styles.sPrc}>{prod.price}</span></p>
+                      <p className={styles.pDesc}>{prod.description}</p>
                     </div>
+                    <button className={styles.addToCartBtn}>Add to cart</button>
                   </div>
                 );
               })}
-            </div>
+              </div>
           </div>
         </div>
       )}

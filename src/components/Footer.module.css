@@ -1,0 +1,11 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: var(--secondary-bg-color);
+    margin-top: 20px;
+    margin-bottom: 0;
+    transform: translateY(2.5vh);
+    color: var(--secondary-color);
+}
