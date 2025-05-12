@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { ShopContext } from "./layout";
 
 const Header = () => {
-  const { cartItems } = useContext(ShopContext);
+  const { cartItems, openCart } = useContext(ShopContext);
 
   return (
     <div className={styles.header}>
@@ -15,7 +15,7 @@ const Header = () => {
       </h1>
       <div className={styles.nav}>
         <Link to="/" className={styles.active}>Home</Link>
-        <div className={styles.cart}>
+        <div className={styles.cart} onClick={openCart}>
           <i className="fas fa-cart-plus fa-xs"></i>
           <sup>{cartItems.length}</sup>
         </div>

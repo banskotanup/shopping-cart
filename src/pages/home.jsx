@@ -5,7 +5,7 @@ import { ShopContext } from "../components/layout";
 import fetchProducts from "../data/products";
 
 const Home = () => {
-  const { products } = useContext(ShopContext);
+  const { products, addToCart } = useContext(ShopContext);
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -44,7 +44,7 @@ const Home = () => {
             <div>
               <h1>Hello,</h1>
               <hr />
-              <p>Welcome to Cratify!</p>
+              <p className={styles.wel}>Welcome to Cratify!</p>
               <p>Where Smart Shopping Begins.</p>
               <p className={styles.p}>
                 Cartify Shop is your one-stop destination for smart, seamless,
@@ -85,7 +85,7 @@ const Home = () => {
                       <p className={styles.price}>NPR <span className={styles.sPrc}>{prod.price}</span></p>
                       <p className={styles.pDesc}>{prod.description}</p>
                     </div>
-                    <button className={styles.addToCartBtn}>Add to cart</button>
+                    <button className={styles.addToCartBtn} onClick={()=> addToCart(prod.id)}>Add to cart</button>
                   </div>
                 );
               })}
