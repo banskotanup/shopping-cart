@@ -57,3 +57,27 @@ body{
 .nav a.active{
     color: var(--secondary-color);
 }
+
+
+@media (max-width:669px){
+    .header{
+        justify-content: space-between;
+    }
+
+    .header h1{
+        margin-left: 20px;
+    }
+
+    .nav a{
+        display: none;
+    }
+
+    .cart{
+        justify-content: start;
+        transform: translateX(-7vh);
+    }
+
+    .cart sup{
+        transform: translateX(25px);
+    }
+}

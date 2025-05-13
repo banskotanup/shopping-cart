@@ -47,6 +47,7 @@ const Home = () => {
     <div>
       {loading ? (
         <div className={styles.loading}>
+          <p>Loading...</p>
           <div className={styles.spinner}></div>
         </div>
       ) : (

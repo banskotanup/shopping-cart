@@ -152,6 +152,10 @@ body{
     scale: 1.1;
 }
 
+.resCartContent{
+    display: none;
+}
+
 .emtCart{
     display: flex;
     justify-content: center;
@@ -160,4 +164,92 @@ body{
     height: 60px;
     width: 40vw;
     font-family: "Bungee Tint", sans-serif;
+}
+
+@media (max-width: 669px){
+    .dialog{
+        left: 20px;
+        top:15%;
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .cartHeader{
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .emtCart{
+        width: 87vw;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .cartContent{
+        display: none;
+    }
+
+    .resCartContent{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10%;
+
+    }
+
+    .imgName img{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+    }
+
+    .btnAndDel{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cartBtns{
+        justify-content: start;
+        margin-bottom: 10px;
+    }
+
+    .cartBtns button{
+        height: 20px;
+        width: 20px;
+        font-size: 1em;
+    }
+    .tot{
+        width: 100%;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+
+    .h3ContTit{
+        margin-bottom: 10px;
+    }
+
+    .delete{
+        margin-left: 0;
+    }
+
+    .cartContHeader{
+        display: none;
+    }
+
+    .hr{
+        width: 90vw;
+        margin-bottom: 10px;
+    }
+
+    .checkoutButton{
+        margin-top: 10px;
+    }
+
+    .cartHeader button{
+        width: 40px;
+    }
 }

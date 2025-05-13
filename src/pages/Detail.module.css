@@ -75,3 +75,48 @@ body{
     scale: 1.1;
 }
 
+@media (max-width:669px){
+    .prodDet{
+        grid-template-columns: 100%;
+        margin-top: 0;
+    }
+
+    .prodImg{
+        width: 96vw;
+        height: 64vh;
+        margin-left: 7px;
+        margin-top: 10px;
+    }
+
+    .prodImg img{
+        width: 88vw;
+        margin-left: 13px;
+        margin-top: 12px;
+    }
+
+    .prodDetails{
+        margin-top: 10px;
+    }
+
+    .prodDetails h1{
+        font-size: 1.4em;
+        margin: 10px;
+    }
+
+    .desc{
+        margin: 10px;
+    }
+
+    .price{
+        margin: 10px;
+    }
+
+    .category{
+        margin: 10px;
+    }
+
+    .prodDetails button{
+        margin-left: 10px;
+        width: 95%;
+    }
+}

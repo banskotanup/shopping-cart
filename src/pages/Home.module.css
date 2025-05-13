@@ -10,38 +10,29 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 25%;
+    margin-top: 20%;
+}
+
+.loading p{
+    text-align: center;
+    margin-left: 2.5%;
 }
 
 .spinner{
-    height: 70px;
-    width: 70px;
-    border: 3px solid var(--secondary-color);
-    border-left: 3px solid darkred;
-    border-top: 3px solid darkgreen;
+    height: 30px;
+    width: 30px;
+    border: 4px solid var(--secondary-color);
+    border-top: 3px solid darkorange;
+    border-radius: 50%;
     animation: 2s spin linear infinite;
 }
 
 @keyframes spin {
     from{
-        border: 3px solid var(--secondary-color);
-        border-left: 3px solid darkred;
-        border-top: 3px solid darkgreen;
-    }
-    25%{
-        border: 3px solid var(--secondary-color);
-        border-top: 3px solid darkred;
-        border-right: 3px solid darkgreen;
-    }
-    50%{
-        border: 3px solid var(--secondary-color);
-        border-right: 3px solid darkred;
-        border-bottom: 3px solid darkgreen;
+        transform: rotate(0deg);
     }
     to{
-        border: 3px solid var(--secondary-color);
-        border-bottom: 3px solid darkred;
-        border-left: 3px solid darkgreen;
+        transform: rotate(360deg);
     }
 }
 
@@ -177,6 +168,7 @@ body{
     display: flex;
     justify-content: center;
     margin-top: 3%;
+    flex-wrap: wrap;
 }
 
 .category{
@@ -217,3 +209,114 @@ body{
     color: var(--bg-color);
 }
 
+@media (max-width: 669px){
+    .welcomeText{
+        grid-template-columns: 100%;
+        transform: translateX(0);
+        width: 95vw;
+        margin-left: 10px;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    .welcomeText div{
+        margin-left: 40px;
+    }
+
+    .welcomeText div h1{
+        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .welcomeText div p{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .welcomeText div .wel{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .welcomeText img{
+        transform: translate(0);
+        margin-bottom: 20px;
+        width: 90%;
+        margin-left: 15px;
+        height: 90%;
+    }
+
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 1px;
+    }
+
+    .card{
+        height: 95%;
+        width: 95%;
+        margin-left: 10px;
+        margin-bottom: 10%;
+    }
+
+    .card:hover{
+        transform: scale(1);
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    .card img{
+        width: 350px;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .desc{
+        width: 350px;
+    }
+
+    .desc h3{
+        font-size: 1.3em;
+        height: 26px;
+        margin-top: 10px;
+    }
+
+    .pDesc{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .price{
+        margin-top: 10px;
+    }
+
+    .addToCartBtn{
+        width: 95%;
+    }
+
+    .cat{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .category{
+        height: 40px;
+        width: 100px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loading{
+        margin-top: 70%;
+    }
+
+    .active{
+        background-color: var(--color) !important;
+        color: #0B121E !important;
+        border: 1px solid var(--bg-color) !important;
+    }
+}
