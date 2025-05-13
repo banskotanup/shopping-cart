@@ -51,7 +51,7 @@ body{
 }
 
 .cart sup{
-    transform: translateX(30px);
+    transform: translateX(25px);
 }
 
 .nav a.active{
