@@ -231,8 +231,9 @@ body{
     }
 
     .welcomeText div p{
-        font-size: 1.2em;
+        font-size: 1em;
         margin-bottom: 10px;
+        text-align: center;
     }
 
     .welcomeText div .wel{
@@ -266,13 +267,13 @@ body{
     }
 
     .card img{
-        width: 350px;
+        width: 320px;
         border-radius: 20px;
         margin-top: 20px;
     }
 
     .desc{
-        width: 350px;
+        width: 320px;
     }
 
     .desc h3{
