@@ -3,12 +3,14 @@ import styles from "./Home.module.css";
 import { useEffect } from "react";
 import { ShopContext } from "../components/layout";
 import fetchProducts from "../data/products";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const { products, addToCart } = useContext(ShopContext);
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function loadHome() {
@@ -25,6 +27,15 @@ const Home = () => {
     return new Promise((resolve) => {
       setTimeout(resolve, 2000);
     });
+  }
+
+  const generateSlug = (title) => {
+    return title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  };
+
+  const handleCardClick = (prod) => {
+    const slug = generateSlug(prod.title);
+    navigate(`/${slug}`);
   }
 
   const filteredProducts =
@@ -77,10 +88,10 @@ const Home = () => {
                 return (
                   <div className={styles.card} key={prod.id}>
                     <div className={styles.img}>
-                      <img src={prod.image} alt="item image" />
+                      <img src={prod.image} alt="item image" onClick={()=>handleCardClick(prod)}/>
                     </div>
                     <div className={styles.desc}>
-                      <h3>{prod.title}</h3>
+                      <h3 onClick={()=>handleCardClick(prod)}>{prod.title}</h3>
                       <hr />
                       <p className={styles.price}>NPR <span className={styles.sPrc}>{prod.price}</span></p>
                       <p className={styles.pDesc}>{prod.description}</p>
