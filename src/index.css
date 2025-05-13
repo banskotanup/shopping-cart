@@ -26,3 +26,7 @@ body{
     background-color: var(--secondary-color);
     cursor: pointer;
 }
+
+.blur{
+    filter: blur(4px);
+}
