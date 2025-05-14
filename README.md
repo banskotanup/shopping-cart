@@ -1,12 +1,91 @@
-# React + Vite
+# 🛒 Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic shopping cart application built with React and Vite. This project allows users to browse products, add or remove items from the cart, and view a live-updated total. It's designed to enhance understanding of React components, state management, and user interaction handling.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse a list of products
+- Add or remove items from the shopping cart
+- View real-time updates of cart totals
+- Responsive design for various devices
+- Built with React and Vite for fast development and performance
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/banskotanup/shopping-cart.git
+   cd shopping-cart
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open the application:**
+
+   Navigate to `http://localhost:5173` in your browser to view the app.
+
+## 🛠️ Technologies Used
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [ESLint](https://eslint.org/) for code linting
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+## 📁 Project Structure
+
+```plaintext
+shopping-cart/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── ProductList.jsx
+│   │   ├── Cart.jsx
+│   │   └── ...
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── ...
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. **Fork the repository**
+
+2. **Create a new branch:**
+
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+
+3. **Make your changes and commit them:**
+
+   ```bash
+   git commit -m "Add your message here"
+   ```
+
+4. **Push to the branch:**
+
+   ```bash
+   git push origin feature/YourFeature
+   ```
+
+5. **Open a pull request**
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
